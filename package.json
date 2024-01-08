@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
+    "dev_base": "nodemon app_base.js",
+    "dev_router": "nodemon app_router.js",
+    "dev_files": "nodemon app_files.js",
+    "dev_vhost": "nodemon app_vhost.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +19,8 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "vhost": "^3.0.2"
   }
 }
